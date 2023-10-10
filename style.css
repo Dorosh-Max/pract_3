@@ -42,6 +42,18 @@ body, html
 
 }
 
+@media screen  and (max-width: 1200px) 
+{
+.title-text
+{
+
+  display: none;
+  
+}
+
+
+}
+
 .title
 {  
   font-size: 20px;
@@ -53,6 +65,18 @@ body, html
   margin-right: -50%;
   transform: translate(-50%, -50%);
   letter-spacing: 5px;
+}
+
+@media screen and (max-width:1200px) 
+{
+.title
+{
+
+  top: 20%;
+
+}
+  
+
 }
 
 .menu
@@ -67,20 +91,44 @@ body, html
   word-spacing: 2cm;
 }
 
+@media screen and (max-width:1200px) 
+{
+.menu
+{
+
+  left: 37%;
+
+}
+  
+
+}
+
 .footer
 {
   font-size: 120%;
   font-weight: 500;
   font-family: Raleway;
   color: white;
-  position: absolute;
-  margin: 0;
-  top: 75%;
-  left: 14%;
-  margin-left: auto;
+  /* top: 75%;
+  left: 14%; */
+  margin-bottom: 30%;
+  margin-left: 10%;
   margin-right: auto;
   width: 5.5cm;
   word-spacing: 1%;
+}
+
+@media screen and (max-width: 1200px) 
+{
+.footer
+{
+  font-size: 150%;
+  top: 24%;
+  left: 40%;
+  width: 1cm;
+  word-spacing: 1cm;
+}  
+
 }
 
 .conteiner-logo
@@ -93,6 +141,7 @@ body, html
   align-items: center;
 }
 
+
 .logo
 {
 
@@ -102,6 +151,17 @@ body, html
   z-index: 0;
 
 }
+
+@media screen and (max-width: 1200px) 
+{
+.logo
+{
+
+  height: unset;
+
+}
+}
+
 
 /* .card
 {
@@ -196,4 +256,16 @@ body, html
 .card:hover::before 
 {
   width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) 
+{
+.card
+{
+
+  border: unset;
+  display: none;
+
+}
 }
