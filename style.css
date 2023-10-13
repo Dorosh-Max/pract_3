@@ -1,29 +1,14 @@
 body, html 
 {
 
-  height: 100%;
-  margin: 0;
-
-}
-
-.shadow
-{
-
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgb(0,0,0,0.75) 2% ,rgb(0,0,0,0)98% );
-  z-index: 0;
-}
-
-.background 
-{
-
-  background-image: url(./img/FFTablet_1100x.progressive.webp);
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(./img/FFTablet_1100x.progressive.webp);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 
 }
 
@@ -32,14 +17,10 @@ body, html
   
   font-family: Young Serif;
   margin: 0;
-  position: absolute;
   color: white;
   font-size: 100px;
-  top: 25%;
-  left: 25%;
   letter-spacing: 20px;
   text-align: justify
-
 }
 
 @media screen  and (max-width: 1200px) 
@@ -79,17 +60,25 @@ body, html
 
 }
 
+
 .menu
 {
   font-family: Roboto Slab;
   font-size: 20px;
   font-weight: 500;
   color: white;
-  position: absolute;
-  top: 5%;
-  left: 3%;
-  word-spacing: 2cm;
 }
+
+#grid
+{
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
 
 @media screen and (max-width:1200px) 
 {
@@ -109,13 +98,9 @@ body, html
   font-weight: 500;
   font-family: Raleway;
   color: white;
-  /* top: 75%;
-  left: 14%; */
   margin-bottom: 30%;
   margin-left: 10%;
   margin-right: auto;
-  width: 5.5cm;
-  word-spacing: 1%;
 }
 
 @media screen and (max-width: 1200px) 
@@ -145,8 +130,7 @@ body, html
 .logo
 {
 
-  position: absolute;
-  width: auto;
+
   height: 7vh;
   z-index: 0;
 
@@ -182,11 +166,12 @@ body, html
 .emblame > img
 {
   
-  position: absolute;
+position: relative;
   width: 10%;
   height: 10%;
   top: 80%;
   left: 75%;
+
 }
 
 /* .card::before
