@@ -12,15 +12,26 @@ body, html
 
 }
 
-.title-text
+.title-text 
 { 
-  
+                          /*  ПЕРЕМІСТИТИ ТЕКСТ  FOREFATHERS В ЦЕНТР ЕКРАНА */
   font-family: Young Serif;
   margin: 0;
   color: white;
   font-size: 100px;
   letter-spacing: 20px;
-  text-align: justify
+  text-align: justify;
+  grid-row-start: 3;
+
+}
+
+#grid-tt
+{
+  height: 60%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: repeat(5,1fr);
 }
 
 @media screen  and (max-width: 1200px) 
@@ -36,16 +47,25 @@ body, html
 }
 
 .title
-{  
-  font-size: 20px;
+{                
+  font-weight: 900;
+  font-size: 10%;
   margin: 0;
   color: white;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 5px;
+  letter-spacing: 1%;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#grid-title
+{
+
+  height: 1%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+
 }
 
 @media screen and (max-width:1200px) 
@@ -69,7 +89,7 @@ body, html
   color: white;
 }
 
-#grid
+#grid-m
 {
     width: 55%;
     display: grid;
