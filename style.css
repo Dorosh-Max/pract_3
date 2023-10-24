@@ -20,7 +20,7 @@ body, html
   color: white;
   font-size: 100px;
   letter-spacing: 20px;
-  text-align: justify;
+  text-align: center;
   grid-row-start: 3;
 
 }
@@ -98,42 +98,23 @@ body, html
     justify-items: center;
 }
 
-
-
-@media screen and (max-width:1200px) 
-{
-.menu
-{
-
-  left: 37%;
-
-}
   
-
-}
 
 .footer
 {
-  font-size: 120%;
+  line-height: 140%;
+  font-size: 112%;
   font-weight: 500;
   font-family: Raleway;
   color: white;
-  margin-bottom: 30%;
-  margin-left: 10%;
-  margin-right: auto;
+  display: grid;
 }
 
-@media screen and (max-width: 1200px) 
+#grid-f
 {
-.footer
-{
-  font-size: 150%;
-  top: 24%;
-  left: 40%;
-  width: 1cm;
-  word-spacing: 1cm;
-}  
-
+  width: 10%;
+  margin-left: 10%;
+  
 }
 
 .conteiner-logo
@@ -183,6 +164,13 @@ body, html
   
 } */
 
+.emblame 
+{
+
+  display: gr;
+
+}
+
 .emblame > img
 {
   
@@ -191,6 +179,13 @@ position: relative;
   height: 10%;
   top: 80%;
   left: 75%;
+  display: grid;
+}
+
+#grid-f
+{
+
+ 
 
 }
 
